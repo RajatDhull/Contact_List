@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            <%=title%>
+        </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="title()">
+        <div class="contact_list">
+            <form action="/action" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="Address" placeholder="Address" required>
+                <input type="number" name="phoneNo" placeholder="Phone Number" required>
+                <button type="submit">Add Me!!</button>
+            </form>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Phone No</th>
+            </tr>
+            <% for (let i of  contacts){ %>
+                <tr>
+                    <td><%= i.name %></td>
+                    <td><%= i.Address %></td>
+                    <td><%= i.phoneNo %></td>
+                    <td><div class="delete-button">
+                        <button class="dlt"><a href="/delete-contact/?_id=<%= i._id %>">
+                            Delete
+                        </a></button>
+                    </div></td>
+                </tr>
+            <% } %>
+        </table></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    background: linear-gradient(to right,black,rgb(0, 0, 209));
+    /* align-items: center; */
+}
+/* .contact_list{
+    /* width: 100%;
+    height: 100%; */
+    /* display: flex;
+    margin: auto;
+    flex-direction: column;
+} */
+table{
+    border: 3px solid red;
+    border-radius: 5px 10px;
+}
+th,td{
+    border: 1.5px solid orange;
+    border-radius: 4px 8px;
+    color: white;
+}
+th{
+    font-size: 1.8rem;
+    padding: 3px;
+}
+td{
+    font-size: 1.3rem;
+    text-align: right;
+    padding: 3px;
+}
+input{
+    display: block;
+    font-size: 1.5rem;
+    border: 1.5px solid gray;
+    background-color: rgb(245, 218, 182);
+    color: rgb(52, 2, 99);
+    border-radius: 4px 7px;
+    margin: 10px 0px;
+}
+button{
+    font-size: 2rem;
+    background-color: rgb(245, 178, 189);
+    color: rgb(12, 128, 12);
+    border: 2px solid goldenrod;
+    border-radius: 4px 8px;
+}
+button:hover{
+    color: rgb(117, 255, 152);
+    background-color: gray;
+    border-radius: 8px 4px;
+}
+.delete-button button{
+    font-size: 1.5rem;
+    background-color: rgb(252, 73, 103);
+    color: green;
+    border: 2px solid goldenrod;
+    border-radius: 4px 7px;
+}
+button a{
+    color: white;
+}
+.delete-button button:hover{
+    background-color: rgb(255, 182, 194);
+    border-radius: 8px 4px;
+
+}
+button a:hover{
+    color: rgb(105, 100, 100);
+    background-color: rgb(255, 182, 194);
+}
