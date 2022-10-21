@@ -7,22 +7,12 @@ const app=express();
 app.use(express.urlencoded());
 //To use links folder 
 app.use(express.static('links'));
-// app.get('/',function(req,res){
-//     console.log(req);
-//     res.send('<p1> Hii WoRlD</p1>');
-// });
-// app.get('/profile',function(req,res){
-//     res.send('<p1> Holaaa WoRlD</p1>');
-// });
-// let pgTitle;
-// function title(){
-// pgTitle=prompt("Enter the name of contact list!!");
-// }
-let contact_list=[];
+
+//let contact_list=[];        //This was just for practice
 app.set('view engine','ejs'); //view engine
 app.set('views',path.join(__dirname,'views')); //path on which files are present which are to be rendered
 app.get('/',function(req,res){      //homepage url
-    return res.render('home',{title:"Hlew World"});
+    return res.render('home',{title:"Hello World"});
 });
 app.get('/abc',function(req,res){
     Contactss.find({},function(err,contact){
